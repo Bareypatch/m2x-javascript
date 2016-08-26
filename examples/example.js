@@ -12,6 +12,8 @@
         this.$commandsView = $("#commands-view");
         this.$locationHistory = $("#location-history");
         this.$deleteLocationHistory = $("#delete-location-history");
+        this.$addDeviceToCollection = $("#add-device-to-collection");
+        this.$removeDeviceFromCollection = $("#remove-device-from-collection");
 
         this.bindEvents();
 
@@ -198,6 +200,41 @@
                 );
             }
         }, this));
+
+        // Handler for adding the device to collection
+        this.$addDeviceToCollection.on("click", "button", $.proxy(function() {
+            var collectionId = $("input[name=collection-id]", this.$addDeviceToCollection).val();
+
+            if(! collectionId){
+                alert("You must type the Collection Id.");
+            } else {
+                this.setLoading(true);
+
+                this.m2x.collections.addDeviceToCollection(collectionId, this.deviceID,
+                    $.proxy(function() { this.setLoading(false); }, this),
+                    $.proxy(this, "handleError")
+                );
+            }
+
+        }, this));
+
+        // Handler for removing the device from collection
+        this.$removeDeviceFromCollection.on("click", "button", $.proxy(function() {
+            var collectionId = $("input[name=collection-id-rm]", this.$removeDeviceFromCollection).val();
+
+            if(! collectionId){
+                alert("You must type the Collection Id.");
+            } else {
+                this.setLoading(true);
+
+                this.m2x.collections.removeFromCollection(collectionId, this.deviceID,
+                    $.proxy(function() { this.setLoading(false); }, this),
+                    $.proxy(this, "handleError")
+                );
+            }
+
+        }, this));
+
     };
 
     M2XExample.prototype.ondeviceChange = function() {

@@ -101,5 +101,19 @@ define(["helpers"], function(helpers) {
         this.metadata.updateField("collections", id, field, value, callback, errorCallback);
     };
 
+    // Add device to collection
+    //
+    // https://m2x.att.com/developer/documentation/v2/collections#Add-device-to-collection
+    Collections.prototype.addDeviceToCollection = function(id, deviceId, callback, errorCallback) {
+        return this.client.put(helpers.url("/collections/{0}/devices/{1}", id, deviceId), callback, errorCallback);
+    };
+
+    // Remove device from collection
+    //
+    // https://m2x.att.com/developer/documentation/v2/collections#Remove-device-from-collection
+    Collections.prototype.removeFromCollection = function(id, deviceId, callback, errorCallback) {
+        return this.client.del(helpers.url("/collections/{0}/devices/{1}", id, deviceId), callback, errorCallback);
+    };
+
     return Collections;
 });
