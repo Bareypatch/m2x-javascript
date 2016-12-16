@@ -14,6 +14,7 @@
         this.$deleteLocationHistory = $("#delete-location-history");
         this.$addDeviceToCollection = $("#add-device-to-collection");
         this.$removeDeviceFromCollection = $("#remove-device-from-collection");
+        this.$searchDevice = $("#search-device");
 
         this.bindEvents();
 
@@ -57,6 +58,11 @@
 
     M2XExample.prototype.onReceiveLocationHistory = function(data) {
         $("code", this.$locationHistory).text(JSON.stringify(data));
+        this.setLoading(false);
+    };
+
+    M2XExample.prototype.onReceiveSearchDetails = function(data) {
+        $("code", this.$searchDevice).text(JSON.stringify(data));
 
         this.setLoading(false);
     };
@@ -235,6 +241,27 @@
 
         }, this));
 
+        //Handler to search device
+        this.$searchDevice.on("click", "button", $.proxy(function() {
+            var deviceVisibility = $("input[name=device-visibility]", this.$searchDevice).val();
+            var limit = $("input[name=limit]", this.$searchDevice).val();
+            var status = $("input[name=status]", this.$searchDevice).val();
+            if (! deviceVisibility) {
+                alert("You must type the device visibility.");
+            }else if (! limit) {
+                alert("You must type the limit.");
+            }else if (! status) {
+                alert("You must type the Status.");
+            }else {
+                this.setLoading(true);
+
+                this.m2x.devices.search({ visibility: deviceVisibility, limit:limit,status:status},
+                    $.proxy(this, "onReceiveSearchDetails"),
+                    $.proxy(this, "handleError")
+                );
+            }
+
+        }, this));
     };
 
     M2XExample.prototype.ondeviceChange = function() {
