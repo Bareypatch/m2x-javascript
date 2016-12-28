@@ -15,6 +15,7 @@
         this.$addDeviceToCollection = $("#add-device-to-collection");
         this.$removeDeviceFromCollection = $("#remove-device-from-collection");
         this.$searchDevice = $("#search-device");
+        this.$iterateOverDevices = $("#iterate-over-devices");
 
         this.bindEvents();
 
@@ -43,6 +44,19 @@
 
         this.setLoading(false);
     };
+
+
+    M2XExample.prototype.onReceiveIterateDeviceDetails = function(data) {
+        var deviceCount = 1;
+        data.devices.forEach(function (device) {
+            this.textorder += "Page" + data.current_page + ", Device " + deviceCount++ + " :: " + device.name + '\n';
+            });
+
+        $("out", this.$iterateOverDevices).text(textorder);
+        this.setLoading(false);
+    };
+
+
 
     M2XExample.prototype.onReceiveStreamValues = function(data) {
         $("code", this.$streamView).text(JSON.stringify(data));
@@ -261,6 +275,34 @@
                 );
             }
 
+        }, this));
+
+        //Handler to iterate over devices
+        this.$iterateOverDevices.on("click", "button", $.proxy(function () {
+            var limit = $("input[name=limit]", this.$iterateOverDevices).val();
+            if (!limit) {
+                alert("You must type the Limit.");
+            } else {
+                this.setLoading(true);
+                this.m2x.devices.list({limit:limit},
+                $.proxy(function (data) {
+                    textorder="";
+                    this.limit=limit;
+                    var pageCount = data["pages"];
+                    for (var page = 1; page <= pageCount; page++) {
+                        var params = {
+                            page: page,
+                            limit:limit
+                        };
+                        this.m2x.devices.list(params,
+                            $.proxy(this, "onReceiveIterateDeviceDetails"),
+                            $.proxy(this, "handleError")
+                        );
+                    }
+                }, this),
+                $.proxy(this, "handleError")
+            );
+            }
         }, this));
     };
 
