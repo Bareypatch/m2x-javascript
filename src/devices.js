@@ -40,6 +40,11 @@ define(["helpers"], function(helpers) {
     //
     // https://m2x.att.com/developer/documentation/v2/device#List-Devices
     Devices.prototype.list = function(params, callback, errorCallback) {
+        if (typeof params === "function") {
+            callback = params;
+            errorCallback = callback;
+            params = {};
+        }
         return this.client.get("/devices", { qs: params || {} }, callback, errorCallback);
     };
 
