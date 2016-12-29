@@ -16,6 +16,7 @@
         this.$removeDeviceFromCollection = $("#remove-device-from-collection");
         this.$searchDevice = $("#search-device");
         this.$iterateOverDevices = $("#iterate-over-devices");
+        this.$exportValues = $("#export-values");
 
         this.bindEvents();
 
@@ -56,7 +57,11 @@
         this.setLoading(false);
     };
 
-
+    M2XExample.prototype.onReceiveExportValues = function(data) {
+        var result = "The job has been completed! You can download the result from " + data["result"]["url"];
+        $("out", this.$exportValues).text(result);
+        this.setLoading(false);
+    };
 
     M2XExample.prototype.onReceiveStreamValues = function(data) {
         $("code", this.$streamView).text(JSON.stringify(data));
@@ -303,6 +308,43 @@
                 $.proxy(this, "handleError")
             );
             }
+        }, this));
+
+	    //Handler to export stream values
+	    this.$exportValues.on("click", "button", $.proxy(function () {
+            var limit = $("input[name=limit]", this.$exportValues).val();
+            var streams = $("input[name=streams]", this.$exportValues).val();
+            var params = "";
+            if (limit && streams) {
+                params = {
+                    limit: limit,
+                    streams: streams
+                };
+            } else if (limit) {
+                params = {
+                    limit: limit
+                };
+            } else if (streams) {
+                params = {
+                    streams: streams
+                };
+            }
+            this.setLoading(true);
+            var response = this.m2x.devices.valuesExport(this.deviceID, params,
+                $.proxy(function (data) {
+                    var location = response.getResponseHeader("Location");
+                    var jobid = location.split('/').reverse()[0];
+                    console.log("Processing job ...");
+                    var root = this;
+                    setTimeout(function () {
+                        root.m2x.jobs.view(jobid,
+                            $.proxy(root, "onReceiveExportValues"),
+                            $.proxy(root, "handleError")
+                        );
+                    }, 8000);
+                }, this),
+                $.proxy(this, "handleError")
+            );
         }, this));
     };
 
