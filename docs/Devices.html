@@ -1,0 +1,8349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Devices</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: Devices</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>Devices</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="Devices"><span class="type-signature"></span>new Devices<span class="signature">(client, keysAPI, metadata)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/device">Wrapper for AT&T M2X Device API</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>client</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>keysAPI</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>metadata</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line2">line 2</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="catalog"><span class="type-signature"></span>catalog<span class="signature">(params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Search-Public-Devices-Catalog">List/search Public Devices Catalog</a> endpoint.
+This allows unauthenticated users to search Devices from other users that have been marked as public, allowing them to read public Device metadata, locations, streams list, and view each Devices' stream metadata and its values.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Devices list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="command"><span class="type-signature"></span>command<span class="signature">(deviceId, commandId, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-s-View-of-Command-Details">Device's View of Command Details</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>commandId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Command to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line597">line 597</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Command details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="commands"><span class="type-signature"></span>commands<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-s-List-of-Received-Commands">Device's List of Received Commands</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to get list of received commands</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line573">line 573</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Commands list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Create-Device">Create Device</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Device details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createKey"><span class="type-signature"></span>createKey<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/keys#Create-Key">Create Key</a> endpoint.
+If a parameter named `stream` is supplied with a stream name, it will create an API key associated with that stream only.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to creates a new API key</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line499">line 499</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteDevice"><span class="type-signature"></span>deleteDevice<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Delete-Device">Delete Device</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to be deleted</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line474">line 474</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteLocationHistory"><span class="type-signature"></span>deleteLocationHistory<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Delete-Location-History">Delete Location History</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to remove location history</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line158">line 158</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteStream"><span class="type-signature"></span>deleteStream<span class="signature">(id, name, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Delete-Data-Stream">Delete Data Stream</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the existing stream to be deleted</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line418">line 418</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteStreamValues"><span class="type-signature"></span>deleteStreamValues<span class="signature">(id, name, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Delete-Data-Stream-Values">Delete Data Stream Values</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the existing stream to delete values</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line401">line 401</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="keys"><span class="type-signature"></span>keys<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/keys#List-Keys">List Keys</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to return a list of API keys</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line486">line 486</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Keys list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="list"><span class="type-signature"></span>list<span class="signature">(params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Devices">List Devices</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Devices list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="location"><span class="type-signature"></span>location<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Location">Read Device Location</a> endpoint.
+Note that this method can return an empty value (response status of 204) if the device has no location defined.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to retrieve location details</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line126">line 126</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Location details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="locationHistory"><span class="type-signature"></span>locationHistory<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Location-History">Read Device Location History</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to retrieve location history</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line139">line 139</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Location details list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="log"><span class="type-signature"></span>log<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Request-Log">View Request Log</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line462">line 462</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="postUpdate"><span class="type-signature"></span>postUpdate<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Device-Update--Single-Values-to-Multiple-Streams-">Post Device Update(Single Value to Multiple Streams)</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line447">line 447</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="postUpdates"><span class="type-signature"></span>postUpdates<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Device-Updates--Multiple-Values-to-Multiple-Streams-">Post Device Updates(Multiple Values to Multiple Streams)</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line431">line 431</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="postValues"><span class="type-signature"></span>postValues<span class="signature">(id, name, values, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Data-Stream-Values">Post Data Stream Values</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the existing stream</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>values</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The value to update</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line382">line 382</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="processCommand"><span class="type-signature"></span>processCommand<span class="signature">(deviceId, commandId, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-Marks-a-Command-as-Processed">Device Marks a Command as Processed</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>commandId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Command to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line611">line 611</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="readMetadata"><span class="type-signature"></span>readMetadata<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Metadata">Read Device Detadata</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to read device metadata</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line523">line 523</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="readMetadataField"><span class="type-signature"></span>readMetadataField<span class="signature">(id, field, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Metadata-Field">Read Device Metadata Field</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to read device metadata</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>field</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The metadata field to be read</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line547">line 547</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="rejectCommand"><span class="type-signature"></span>rejectCommand<span class="signature">(deviceId, commandId, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-Marks-a-Command-as-Rejected">Device Marks a Command as Rejected</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>commandId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Command to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line634">line 634</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="sampleStreamValues"><span class="type-signature"></span>sampleStreamValues<span class="signature">(id, name, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Data-Stream-Sampling">Data Stream Sampling</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the stream to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line280">line 280</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Search-Devices">Search Devices</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line42">line 42</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Devices list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setStreamValue"><span class="type-signature"></span>setStreamValue<span class="signature">(id, name, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Data-Stream-Value">Update Data Stream Value</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to set the stream value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the stream to be set</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line224">line 224</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="stream"><span class="type-signature"></span>stream<span class="signature">(id, name, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Data-Stream">View Data Stream</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to get the stream details</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the stream to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line241">line 241</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Data Stream details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="streams"><span class="type-signature"></span>streams<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Data-Streams">List Data Streams</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to retrieve list of the associated streams</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line191">line 191</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Data streams list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="streamStats"><span class="type-signature"></span>streamStats<span class="signature">(id, name, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Data-Stream-Stats">Data Stream Stats</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the stream to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line298">line 298</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="streamValues"><span class="type-signature"></span>streamValues<span class="signature">(id, name, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Data-Stream-Values">List Data Stream Values</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the stream to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line258">line 258</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Data Stream list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="tags"><span class="type-signature"></span>tags<span class="signature">(callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Device-Tags">List Devices Tags</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line73">line 73</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Devices list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Details">Update Device Details</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to update</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line98">line 98</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateKey"><span class="type-signature"></span>updateKey<span class="signature">(id, key, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/keys#Update-Key">Update Key</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to update API key</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">API key to be updated</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line512">line 512</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateLocation"><span class="type-signature"></span>updateLocation<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Location">Update Device Location</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to update location details</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line175">line 175</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateMetadata"><span class="type-signature"></span>updateMetadata<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Metadata">Update Device Metadata</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to update device metadata</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line535">line 535</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateMetadataField"><span class="type-signature"></span>updateMetadataField<span class="signature">(id, field, value, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Metadata-Field">Update Device Metadata Field</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to update device metadata</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>field</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The metadata field to be updated</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The value to update</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line560">line 560</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateStream"><span class="type-signature"></span>updateStream<span class="signature">(id, name, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Create-Update-Data-Stream">Create Update Data Stream</a> endpoint.
+If the stream doesn't exist it will create it. See https://m2x.att.com/developer/documentation/device#Create-Update-Data-Stream for details.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to update stream's properties</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of the stream to be updated</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line206">line 206</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="values"><span class="type-signature"></span>values<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Values-from-all-Data-Streams-of-a-Device">List Values from all Data Streams of a Device</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line315">line 315</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Data stream list
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="valuesExport"><span class="type-signature"></span>valuesExport<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Export-Values-from-all-Data-Streams-of-a-Device">Export Values from all Data Streams of a Device</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line357">line 357</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    HttpResponse The API response, see M2X API docs for details
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="valuesSearch"><span class="type-signature"></span>valuesSearch<span class="signature">(id, params, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Search-Values-from-all-Data-Streams-of-a-Device">Search Values from all Data Streams of a Device</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">params</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line336">line 336</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Data stream list in JSON format
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="view"><span class="type-signature"></span>view<span class="signature">(id, callback, errorCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Device-Details">View Device Details</a> endpoint.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">str</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID of the Device to retrieve</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Response callback</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="devices.js.html">devices.js</a>, <a href="devices.js.html#line113">line 113</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Device details
+</div>
+
+
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Charts.html">Charts</a></li><li><a href="Collections.html">Collections</a></li><li><a href="Commands.html">Commands</a></li><li><a href="Devices.html">Devices</a></li><li><a href="Distributions.html">Distributions</a></li><li><a href="Jobs.html">Jobs</a></li><li><a href="Keys.html">Keys</a></li><li><a href="Metadata.html">Metadata</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Feb 24 2017 12:03:25 GMT+0530 (IST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
