@@ -3,7 +3,7 @@ define(["helpers"], function(helpers) {
     /**
      * @module Keys
      * @description Method for [Wrapper for AT&T M2X Keys API]{@link https://m2x.att.com/developer/documentation/keys} endpoint.
-     * @param client {str}
+     * @param client {object}
      * @constructor
      */
     var Keys = function(client) {

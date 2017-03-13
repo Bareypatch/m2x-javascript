@@ -2,8 +2,8 @@ define(["helpers"], function(helpers) {
     /**
      * @module Collections
      * @description Method for [Wrapper for AT&T M2X Collections API]{@link https://m2x.att.com/developer/documentation/v2/collections} endpoint.
-     * @param client {str}
-     * @param metadata {str}
+     * @param client {object}
+     * @param metadata {object}
      * @constructor
      */
     var Collections = function(client, metadata) {

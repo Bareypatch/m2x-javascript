@@ -2,9 +2,9 @@ define(["helpers"], function(helpers) {
     /**
      * @module Devices
      * @description Method for [Wrapper for AT&T M2X Device API]{@link https://m2x.att.com/developer/documentation/device} endpoint.
-     * @param client {str}
+     * @param client {object}
      * @param keysAPI {str}
-     * @param metadata {str}
+     * @param metadata {object}
      * @constructor
      */
     var Devices = function(client, keysAPI, metadata) {

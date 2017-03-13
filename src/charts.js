@@ -2,7 +2,7 @@ define(["helpers"], function(helpers) {
      /**
      * @module Charts
      * @description Method for [Wrapper for AT&T M2X Charts API]{@link https://m2x.att.com/developer/documentation/charts} endpoint.
-     * @param client {str}
+     * @param client {object}
      * @constructor
      */
     var Charts = function(client) {

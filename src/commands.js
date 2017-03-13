@@ -2,7 +2,7 @@ define(["helpers"], function(helpers) {
     /**
      * @module Commands
      * @description Method for [Wrapper for AT&T M2X Commands API]{@link https://m2x.att.com/developer/documentation/v2/commands} endpoint.
-     * @param client {str}
+     * @param client {object}
      * @constructor
      */
     var Commands = function(client) {

@@ -3,8 +3,8 @@ define(["helpers"], function(helpers) {
     /**
      * @module Distributions
      * @description Method for [Wrapper for AT&T M2X Distribution API]{@link https://m2x.att.com/developer/documentation/distribution} endpoint.
-     * @param client {str}
-     * @param metadata {str}
+     * @param client {object}
+     * @param metadata {object}
      * @constructor
      */
     var Distributions = function(client, metadata) {

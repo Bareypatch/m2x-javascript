@@ -2,7 +2,7 @@ define(["helpers"], function(helpers) {
     /**
      * @module Metadata
      * @description Method for Generic Metadata methods for M2X resources endpoint.
-     * @param client {str}
+     * @param client {object}
      * @constructor
      */
     var Metadata = function(client) {
